@@ -10,7 +10,6 @@ export class PropertyDirective{
     render: Renderer;
 
     constructor(elementRef:ElementRef,render: Renderer){
-        debugger
         this.elementRef = elementRef;
         this.render = render;
         this.render.setElementStyle(this.elementRef.nativeElement, 'backgroundColor', 'red');
